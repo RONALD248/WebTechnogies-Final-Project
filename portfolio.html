@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Capture Moments Photography</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Capture Moments</a>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="portfolio-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <p>A collection of my favorite moments captured through the lens</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="wedding">Weddings</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn" data-filter="landscape">Landscapes</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Wedding Photos -->
+                    <div class="portfolio-item" data-category="wedding">
+                        <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wedding ceremony">
+                        <div class="portfolio-overlay">
+                            <h3>Wedding Day</h3>
+                            <p>Emotional ceremony moments</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="wedding">
+                        <img src="https://images.pexels.com/photos/1751681/pexels-photo-1751681.jpeg" alt="Wedding couple">
+                        <div class="portfolio-overlay">
+                            <h3>Bridal Portraits</h3>
+                            <p>Elegant bridal photography</p>
+                        </div>
+                    </div>
+
+                    <!-- Portrait Photos -->
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portrait photography">
+                        <div class="portfolio-overlay">
+                            <h3>Studio Portraits</h3>
+                            <p>Professional headshots</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family portrait">
+                        <div class="portfolio-overlay">
+                            <h3>Family Session</h3>
+                            <p>Natural family moments</p>
+                        </div>
+                    </div>
+
+                    <!-- Landscape Photos -->
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mountain landscape">
+                        <div class="portfolio-overlay">
+                            <h3>Mountain Scapes</h3>
+                            <p>Breathtaking mountain views</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Forest landscape">
+                        <div class="portfolio-overlay">
+                            <h3>Forest Dreams</h3>
+                            <p>Serene forest photography</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Photos -->
+                    <div class="portfolio-item" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corporate event">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Events</h3>
+                            <p>Professional event coverage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday party">
+                        <div class="portfolio-overlay">
+                            <h3>Celebrations</h3>
+                            <p>Joyful party moments</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional mixed category photos -->
+                    <div class="portfolio-item" data-category="wedding">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wedding details">
+                        <div class="portfolio-overlay">
+                            <h3>Wedding Details</h3>
+                            <p>Beautiful ceremony details</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg" alt="Business portrait">
+                        <div class="portfolio-overlay">
+                            <h3>Professional Portraits</h3>
+                            <p>Corporate headshots</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coastal landscape">
+                        <div class="portfolio-overlay">
+                            <h3>Coastal Views</h3>
+                            <p>Stunning ocean photography</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Conference event">
+                        <div class="portfolio-overlay">
+                            <h3>Conferences</h3>
+                            <p>Professional conference coverage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Create Your Own Memories?</h2>
+                <p>Let's work together to capture your special moments</p>
+                <a href="contact.html" class="btn-primary">Book a Session</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Capture Moments</h3>
+                <p>Professional photography services for all your special occasions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Capture Moments Photography. All rights reserved.By Collinces Ronald</p>
+        </div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>
